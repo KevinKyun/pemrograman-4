@@ -40,15 +40,15 @@ namespace ClassMember
 
         public void InfoMahasiswa()
         {
-            Console.WriteLine("----------Mahasiswa Hadir----------");
+            Console.WriteLine("----------Profile Mahasiswa----------");
             Console.WriteLine("Dengan Nama : {0}", Nama);
             Console.WriteLine("Dengan Nim : {0}", Nim);
             Console.WriteLine("Dengan Jurusan : {0}", Jurusan); 
             Console.WriteLine("Dengan Ipk : {0}", Ipk);
 
-            if (Ipk < 3)
+            if (Ipk >= 1 && Ipk <= 3)
             {
-                Console.WriteLine("Nilai kamu tidak tuntas");
+                Console.WriteLine("Jangan bersedih bahwa kamu tidak tuntas");
             }
             else if (Ipk >= 3 && Ipk <= 3.5)
             {
