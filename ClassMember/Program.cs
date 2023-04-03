@@ -15,6 +15,7 @@ namespace ClassMember
                 Mahasiswa mahasiswa1 = new Mahasiswa();
                 mahasiswa1.Nama = "Kevin";
                 mahasiswa1.Nim = "22.11.4870";
+                mahasiswa1.Jurusan = "Informatika";
                 mahasiswa1.Ipk = 4f;
                 mahasiswa1.InfoMahasiswa();
                 Console.ReadLine();

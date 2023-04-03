@@ -6,10 +6,11 @@ namespace ClassMember
 {
     internal class Mahasiswa
     {
-        //Fled
+        //Fields
         private string _nama;
         private string _nim;
         private float _ipk;
+        private string _jurusan;
 
         //Properti
         public string Nama
@@ -30,12 +31,19 @@ namespace ClassMember
             set { _ipk = value; }
         }
 
+        public string Jurusan
+        {
+            get { return _jurusan; }
+            set { _jurusan = value; }
+        }
+
 
         public void InfoMahasiswa()
         {
             Console.WriteLine("----------Mahasiswa Hadir----------");
             Console.WriteLine("Dengan Nama : {0}", Nama);
             Console.WriteLine("Dengan Nim : {0}", Nim);
+            Console.WriteLine("Dengan Jurusan : {0}", Jurusan); 
             Console.WriteLine("Dengan Ipk : {0}", Ipk);
 
             if (Ipk < 3)
